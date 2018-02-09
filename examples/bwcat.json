@@ -1,0 +1,11 @@
+{
+  "input_path": {
+    "path": "",
+    "class": "File"
+  },
+
+  "output_path": {
+    "path": "/tmp/cat_out.txt",
+    "class": "File"
+  }
+}
