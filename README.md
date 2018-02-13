@@ -10,9 +10,9 @@
 | --------------------------------------------- | ----------------------------------------------- |
 | [![Master Badge][travis-master]][travis-base] | [![Develop Badge][travis-develop]][travis-base] |
 
-## Available Tools
+## Current Tools
 
-Tools available in [cgpBigWig] currently supported in this docker are:
+Tools available in [cgpBigWig] supported in this docker are:
 
 * [bwcat] - Read the contents of a bigwig (.bw) file
 * [bwjoin] - Concatenate bigwig files together
