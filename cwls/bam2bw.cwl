@@ -32,15 +32,10 @@ inputs:
   input_path:
     type: File
     doc: "Path to the input [b|cr]am file"
-    secondaryFiles: $(self.basename + self.nameext + '.' + self.nameext.replace('m','i'))
+    secondaryFiles: $(self.basename + self.nameext.replace('m','i'))
     inputBinding:
       prefix: --input
       position: 1
-  output_path:
-    type: File
-    doc: "Path to the output .bw file"
-    inputBinding:
-      prefix: --outfile
   filter:
     type: int?
     doc: "SAM flags to filter"
@@ -68,7 +63,7 @@ outputs:
   output:
     type: File
     outputBinding:
-      glob: $(inputs.output_path)
+      glob: output.bam.bw
 
 $schemas:
   - http://schema.org/docs/schema_org_rdfa.html

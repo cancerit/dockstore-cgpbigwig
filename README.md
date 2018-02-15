@@ -1,6 +1,6 @@
 # dockstore-cgpbigwig
 
-`dockstore-cgpbigwig` provides a suite of commandline tools written in C to manupulate [BigWig] files.
+`dockstore-cgpbigwig` provides a suite of commandline tools written in C to manupulate [BigWig] files. These has been packaged specifically for use with the [Dockstore.org](https://dockstore.org/) framework.
 
 [![Join the chat at https://gitter.im/dockstore-cgpbigwig/general][gitter_general]][gitter_badge]
 
@@ -12,11 +12,14 @@
 
 ## Current Tools
 
-Tools available in [cgpBigWig] supported in this docker are:
+Tools available in [cgpBigWig] supported in this docker:
 
 * [bwcat] - Read the contents of a bigwig (.bw) file
-* [bwjoin] - Concatenate bigwig files together
 * [bam2bw] - Generate bigwig (.bw) coverage file from bam
+
+Tools to be supported in a future releases of this container:
+
+* [bwjoin] - Concatenate bigwig files together
 * [bg2bw] - Generate bigwig (.bw) coverage file from bedgraph (.bed) format
 * [bam2bwbases] - Generate bigwig (.bw) proportion file of each base at a position from bam
 * [bam2bedgraph] - Generate a coverage bedgraph from bam
@@ -24,6 +27,23 @@ Tools available in [cgpBigWig] supported in this docker are:
 ## Test Data
 
 The `examples/` directory contains test data in `.json` files that can be used to verify the tools available.
+
+### Example reference files
+
+In order to use the test examples for `bam2bw`, `bam2bwbases`, `bg2bw`, `bwjoin` reference information for
+Human GRCh37d5 is required. This can be downloaded and unpacked from our ftp site [here][ftpref]. The reference paths in the `.json` example file should be updated to the location you have unpacked
+
+```
+wget ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/core_ref_GRCh37d5.tar.gz
+
+mkdir GRCh37d5
+
+tar -C GRCh37d5 --strip 1 -zxf core_ref_GRCh37d5.tar.gz
+```
+
+### Example input files
+
+
 
 ## Release process
 
@@ -83,6 +103,7 @@ identical to a statement that reads ‘Copyright (c) 2005, 2006, 2007, 2008,
 [bg2bw]: https://github.com/cancerit/cgpBigWig#bg2bw
 [bam2bwbases]: https://github.com/cancerit/cgpBigWig#bam2bwbases
 [bam2bedgraph]: https://github.com/cancerit/cgpBigWig#bam2bedgraph
+[ftpref]: ftp://ftp.sanger.ac.uk/pub/cancer/dockstore/human/core_ref_GRCh37d5.tar.gz
 
 <!-- Travis -->
 [travis-base]: https://travis-ci.org/cancerit/dockstore-cgpbigwig

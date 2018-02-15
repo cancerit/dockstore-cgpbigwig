@@ -7,12 +7,8 @@
   "include_zeros": false,
 
   "reference": {
-    "path": "/path/to/reference/genome.fa",
-    "class": "File"
-  },
-
-  "output_path": {
-    "path": "/tmp/out.bw",
+    "path": "/path/to/GRCh37d5/genome.fa",
     "class": "File"
   }
+
 }
