@@ -1,11 +1,5 @@
 {
   "input_path": {
-    "path": "",
+    "path": "/path/to/input.bw",
     "class": "File"
-  },
-
-  "output_path": {
-    "path": "/tmp/cat_out.txt",
-    "class": "File"
-  }
 }
