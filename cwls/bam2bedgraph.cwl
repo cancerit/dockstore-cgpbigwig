@@ -31,15 +31,18 @@ requirements:
 inputs:
   input_path:
     type: File
+    doc: "Path to bam/cram input file"
     inputBinding:
       prefix: --input
       position: 1
   region:
     type: string?
+    doc: "Region in bam to access"
     inputBinding:
       prefix: --region
   filter:
     type: int
+    doc: "Ignore reads with the filter flags"
     inputBinding:
       prefix: --filter
 
