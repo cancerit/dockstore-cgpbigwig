@@ -1,0 +1,11 @@
+{
+  "input_path": {
+    "path": "https://raw.githubusercontent.com/cancerit/cgpBigWig/master/test_data/volvox-sorted.coverage.expected.bed",
+    "class": "File"
+  },
+
+  "chrom_list": {
+    "path": "/your/path/to/GRCh37d5/genome.fa.fai",
+    "class": "File"
+  },
+}
