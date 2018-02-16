@@ -1,5 +1,5 @@
 {
   "input_path": {
-    "path": "/path/to/input.bw",
+    "path": "https://github.com/cancerit/cgpBigWig/blob/master/test_data/test.bw",
     "class": "File"
 }
