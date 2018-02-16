@@ -10,7 +10,7 @@ doc: |
 
   A wrapper for the cgpBigWig bwcat tool.
 
-  bam2bw documentation can be found [here](https://github.com/cancerit/cgpBigWig#bwcat)
+  bwcat documentation can be found [here](https://github.com/cancerit/cgpBigWig#bwcat)
 
   In order to run the example found in `example/bwcat.json` please download the relevant reference files
   listed in the [`README`](https://github.com/cancerit/cgpdockstore-cgpbigwig/README.md#Example_reference_files)
