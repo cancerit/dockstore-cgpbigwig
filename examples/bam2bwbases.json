@@ -1,0 +1,18 @@
+{
+  "input_path": {
+    "path": "ftp://ngs.sanger.ac.uk/production/cancer/dockstore/cgpwxs/COLO-829-BL_ex.bam",
+    "class": "File"
+  },
+
+  "filter": 4,
+
+  "reference": {
+    "path": "/your/path/to/reference/genome.fa",
+    "class": "File"
+  },
+
+  "output_path": {
+    "path": "bam2bwbases.out.bw",
+    "class": "File"
+  }
+}
