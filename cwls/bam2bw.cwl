@@ -15,6 +15,7 @@ doc: |
 
   In order to run the example found in `example/bam2bw.json` please download the relevant reference files
   listed in the [`README`](https://github.com/cancerit/cgpdockstore-cgpbigwig/README.md#Example_reference_files)
+  and change the reference path in bam2bw.json
 
   See the [dockstore-cgpbigwig](https://github.com/cancerit/dockstore-cgpbigwig)
   website for more information about this wrapper.
@@ -25,7 +26,7 @@ baseCommand: bam2bw
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "docker pull drjsanger/randomtesting:cgpbigwig01"
+    dockerPull: "drjsanger/randomtesting:cgpbigwig01"
   - class: InlineJavascriptRequirement
 
 inputs:
@@ -47,7 +48,7 @@ inputs:
     inputBinding:
       prefix: --region
   include_zeros:
-    type: boolean
+    type: boolean?
     doc: "Include zero coverage regions as additional entries to the bw file"
     inputBinding:
       prefix: --include-zeroes

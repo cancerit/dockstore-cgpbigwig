@@ -50,12 +50,8 @@ outputs:
 
 $schemas:
   - http://schema.org/docs/schema_org_rdfa.html
-  - http://xmlns.com/foaf/0.1/foaf.rdf
-  - http://purl.org/dc/terms/dcterms.rdf
 
 $namespaces:
-  dct: http://purl.org/dc/terms/
-  foaf: http://xmlns.com/foaf/0.1/
   s: http://schema.org/
 
 s:codeRepository: https://github.com/cancerit/dockstore-cgpbigwig

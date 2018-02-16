@@ -7,7 +7,7 @@
   "include_zeros": false,
 
   "reference": {
-    "path": "/path/to/GRCh37d5/genome.fa",
+    "path": "/your/path/to/GRCh37d5/genome.fa",
     "class": "File"
   }
 
