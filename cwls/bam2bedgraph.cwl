@@ -1,27 +1,19 @@
 #!/usr/bin/env cwl-runner
-$namespaces:
-    dct: http://purl.org/dc/terms/
-    foaf: http://xmlns.com/foaf/0.1/
-    s: http://schema.org/
 
-$schemas:
-    - http://schema.org/docs/schema_org_rdfa.html
-    - http://xmlns.com/foaf/0.1/foaf.rdf
-    - http://purl.org/dc/terms/dcterms.rdf
+doc: |
+  ![build_status](https://quay.io/repository/wtsicgp/dockstore-cgpbigwig/status)
 
-s:codeRepository: https://github.com/cancerit/dockstore-cgpbigwig
-s:license: https://spdx.org/licenses/GPL-3.0
+  A wrapper for the cgpBigWig bam2bedgraph tool.
 
-s:author:
-  - class: s:Person
-    s:identifier: https://orcid.org/0000-0002-0407-0386
-    s:email: mailto:drj@sanger.ac.uk
-    s:name: David Jones
+  bam2bedgraph documentation can be found [here](https://github.com/cancerit/cgpBigWig#bam2bedgraph)
 
-dct:creator:
-  "@id": "https://orcid.org/0000-0002-0407-0386"
-  foaf:name: David Jones
-  foaf:mbox: "drj@sanger.ac.uk"
+  In order to run the example found in `example/bam2bedgraph.json` please download the relevant reference files
+  listed in the [`README`](https://github.com/cancerit/cgpdockstore-cgpbigwig/README.md#Example_reference_files)
+
+  See the [dockstore-cgpbigwig](https://github.com/cancerit/dockstore-cgpbigwig)
+  website for more information about this wrapper.
+
+  For queries relating to the underlying software see [cgpBigWig](https://github.com/cancerit/cgpBigWig).
 
 cwlVersion: v1.0
 
@@ -34,7 +26,7 @@ baseCommand: bam2bedgraph
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "docker pull drjsanger/randomtesting:cgpbigwig01"
+    dockerPull: "drjsanger/randomtesting:cgpbigwig01"
 
 inputs:
   input_path:
@@ -42,10 +34,6 @@ inputs:
     inputBinding:
       prefix: --input
       position: 1
-  output_path:
-    type: string
-    inputBinding:
-      prefix: --output
   region:
     type: string?
     inputBinding:
@@ -57,16 +45,24 @@ inputs:
 
 outputs:
   output:
-    type: File
-    outputBinding:
-      glob: $(inputs.output_path)
+    type: stdout
 
-doc: |
-  ![build_status](https://quay.io/repository/wtsicgp/dockstore-cgpbigwig/status)
+$namespaces:
+  s: http://schema.org/
 
-  A wrapper for the cgpBigWig bam2bedgraph tool.
+$schemas:
+  - http://schema.org/docs/schema_org_rdfa.html
 
-  See the [dockstore-cgpbigwig](https://github.com/cancerit/dockstore-cgpbigwig)
-  website for more information about this wrapper.
+s:codeRepository: https://github.com/cancerit/dockstore-cgpbigwig
+s:license: https://spdx.org/licenses/GPL-3.0
 
-  For queries relating to the underlying software see [cgpBigWig](https://github.com/cancerit/cgpBigWig).
+s:author:
+  - class: s:Person
+    s:identifier: https://orcid.org/0000-0002-0407-0386
+    s:email: mailto:drj@sanger.ac.uk
+    s:name: David Jones
+
+dct:creator:
+"@id": "https://orcid.org/0000-0002-0407-0386"
+foaf:name: David Jones
+foaf:mbox: "drj@sanger.ac.uk"

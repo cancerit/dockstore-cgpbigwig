@@ -22,7 +22,7 @@ doc: |
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "docker pull drjsanger/randomtesting:cgpbigwig01"
+    dockerPull: "drjsanger/randomtesting:cgpbigwig01"
 
 baseCommand: bwcat
 
