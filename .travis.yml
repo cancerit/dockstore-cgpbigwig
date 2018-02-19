@@ -7,10 +7,17 @@ language: c
 sudo: false
 
 services:
-  - docker
+ - docker
 
 install:
  - docker build -t dockstore-cgpbigwig .
 
 script:
  - docker images | grep -c dockstore-cgpbigwig
+ - IMAGENAME=`docker images | grep cgpbigwig | tr -s ' ' | cut -d ' ' -f 3`
+ - docker run -ti --rm $IMAGENAME bam2bedgraph --help
+ - docker run -ti --rm $IMAGENAME bam2bw --help
+ - docker run -ti --rm $IMAGENAME bam2bwbases --help
+ - docker run -ti --rm $IMAGENAME bg2bw --help
+ - docker run -ti --rm $IMAGENAME bwcat --help
+ - docker run -ti --rm $IMAGENAME bwjoin --help
