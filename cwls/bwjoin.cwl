@@ -26,7 +26,7 @@ baseCommand: bwjoin
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:1.0.0-rc3"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:1.0.0"
 
 inputs:
   input_path:
