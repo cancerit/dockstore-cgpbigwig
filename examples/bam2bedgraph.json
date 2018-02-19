@@ -1,0 +1,8 @@
+{
+  "input_path": {
+    "path": "ftp://ngs.sanger.ac.uk/production/cancer/dockstore/cgpwxs/COLO-829-BL_ex.bam",
+    "class": "File"
+  },
+
+  "filter": 3852
+}

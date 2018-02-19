@@ -1,0 +1,21 @@
+{
+  "input_path": {
+    "path": "/path/to/input/directory",
+    "class": "Directory"
+  },
+
+  "ref_index": {
+    "path": "/your/path/to/reference/genome.fa.fai",
+    "class": "File"
+  },
+
+  "output_path": {
+    "path": "joined.bw",
+    "class": "File"
+  },
+
+  "output": {
+    "path": "joined.bw",
+    "class": "File"
+  }
+}
