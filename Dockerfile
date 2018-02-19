@@ -36,7 +36,7 @@ FROM  ubuntu:16.04
 
 LABEL maintainer="drj@sanger.ac.uk"\
       uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
-      version="0.1.0" \
+      version="1.0.0-rc1" \
       description="cgpBigWig for dockstore.org"
 
 ENV OPT /opt/wtsi-cgp
