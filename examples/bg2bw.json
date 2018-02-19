@@ -7,5 +7,5 @@
   "chrom_list": {
     "path": "/your/path/to/GRCh37d5/genome.fa.fai",
     "class": "File"
-  },
+  }
 }
