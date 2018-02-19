@@ -2,9 +2,9 @@
 
 `dockstore-cgpbigwig` provides a suite of commandline tools written in C to manupulate [BigWig] files. These has been packaged specifically for use with the [Dockstore.org](https://dockstore.org/) framework.
 
-[![Join the chat at https://gitter.im/dockstore-cgpbigwig/general][gitter_general]][gitter_badge]
+[![Gitter Badge][gitter_svg]][gitter_badge]
 
-[![Docker Repository on Quay][quaystatus]][dockstore]
+[![Quay Badge][quay-status]][quay-repo]
 
 | Master                                        | Develop                                         |
 | --------------------------------------------- | ----------------------------------------------- |
@@ -47,7 +47,7 @@ This project is maintained using [HubFlow].
 1. Push changes
 1. Check state on Travis
 1. Generate the release (add notes to GitHub)
-1. Confirm that image has been built on [quay.io]
+1. Confirm that image has been built on [quay.io][quay-builds]
 1. Update the [dockstore] entry, see [their docs][dockstore_intro].
 
 ## LICENCE
@@ -86,7 +86,6 @@ identical to a statement that reads ‘Copyright (c) 2005, 2006, 2007, 2008,
 <!-- References -->
 [BigWig]: https://genome.ucsc.edu/goldenpath/help/bigWig.html
 [HubFlow]: https://datasift.github.io/gitflow/
-[quay.io]: https://quay.io/repository/wtsicgp/dockstore-cgpbigwig?tab=builds
 [dockstore]: https://dockstore.org/containers/quay.io/wtsicgp/dockstore-cgpbigwig
 [dockstore_intro]: https://dockstore.org/docs/getting-started-with-dockstore
 [cgpBigWig]: https://github.com/cancerit/cgpBigWig
@@ -104,8 +103,10 @@ identical to a statement that reads ‘Copyright (c) 2005, 2006, 2007, 2008,
 [travis-develop]: https://travis-ci.org/cancerit/dockstore-cgpbigwig.svg?branch=develop
 
 <!-- Quay -->
-[quaystatus]: https://quay.io/repository/wtsicgp/dockstore-cgpbigwig/status "Docker Repository on Quay"
+[quay-status]: https://quay.io/repository/wtsicgp/dockstore-cgpbigwig/status
+[quay-repo]: https://quay.io/repository/wtsicgp/dockstore-cgpbigwig
+[quay-builds]: https://quay.io/repository/wtsicgp/dockstore-cgpbigwig?tab=builds
 
 <!-- Gitter -->
-[gitter_general]: https://badges.gitter.im/dockstore-cgpbigwig/general.svg
-[gitter_badge]: https://gitter.im/dockstore-cgpbigwig/general?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[gitter_svg]: https://badges.gitter.im/dockstore-cgp/Lobby.svg
+[gitter_badge]: https://gitter.im/dockstore-cgp/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
