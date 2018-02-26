@@ -45,6 +45,11 @@ inputs:
     doc: "Ignore reads with the filter flags"
     inputBinding:
       prefix: --filter
+  overlap:
+    type: boolean
+    doc: "Flag to check for overlapping reads"
+    inputBinding:
+      prefix: --overlap
 
 outputs:
   output:
