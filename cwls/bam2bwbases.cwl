@@ -51,6 +51,11 @@ inputs:
     type: File?
     inputBinding:
       prefix: --reference
+  overlap:
+    type: boolean
+    doc: "Flag to check for overlapping reads"
+    inputBinding:
+      prefix: --overlap
 
 
 outputs:

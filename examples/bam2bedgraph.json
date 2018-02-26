@@ -4,5 +4,7 @@
     "class": "File"
   },
 
-  "filter": 3852
+  "filter": 3852,
+
+  "overlap": false
 }
