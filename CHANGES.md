@@ -1,6 +1,6 @@
 # CHANGES
 
-## NEXT
+## 2.0.0
 
 * Update to use [cgpBigWig-1.0.0](https://github.com/cancerit/cgpBigWig/releases/tag/1.0.0)
 * Add `--overlap` support to appropriate cwls `bam2bedgraph` `bam2bw` `bam2bwbases`
