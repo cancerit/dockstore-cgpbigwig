@@ -9,6 +9,8 @@
   "reference": {
     "path": "/your/path/to/GRCh37d5/genome.fa",
     "class": "File"
-  }
+  },
+
+  "overlap": false
 
 }

@@ -14,5 +14,7 @@
   "output_path": {
     "path": "bam2bwbases.out.bw",
     "class": "File"
-  }
+  },
+
+  "overlap": false
 }
