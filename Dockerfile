@@ -35,7 +35,7 @@ RUN bash build/opt-build.sh $OPT
 FROM  ubuntu:16.04
 
 LABEL maintainer="drj@sanger.ac.uk"\
-      uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
+      uk.ac.sanger.cgp="Cancer, Ageing and Somatic Mutation, Wellcome Sanger Institute" \
       version="2.0.1" \
       description="cgpBigWig for dockstore.org"
 

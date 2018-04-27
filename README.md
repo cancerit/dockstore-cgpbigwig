@@ -55,7 +55,7 @@ This project is maintained using [HubFlow].
 ```
 Copyright (c) 2016-2018 Genome Research Ltd.
 
-Author: Cancer Genome Project <cgpit@sanger.ac.uk>
+Author: Cancer, Ageing and Somatic Mutation <cgphelp@sanger.ac.uk>
 
 This file is part of dockstore-cgpbigwig.
 
