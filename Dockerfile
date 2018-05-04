@@ -35,8 +35,8 @@ RUN bash build/opt-build.sh $OPT
 FROM  ubuntu:16.04
 
 LABEL maintainer="drj@sanger.ac.uk"\
-      uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
-      version="2.0.0" \
+      uk.ac.sanger.cgp="Cancer, Ageing and Somatic Mutation, Wellcome Sanger Institute" \
+      version="2.0.1" \
       description="cgpBigWig for dockstore.org"
 
 ENV OPT /opt/wtsi-cgp

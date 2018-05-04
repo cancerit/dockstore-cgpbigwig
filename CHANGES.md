@@ -1,5 +1,9 @@
 # CHANGES
 
+## 2.0.1
+
+* Update to use [cgpBigWig-1.0.2](https://github.com/cancerit/cgpBigWig/releases/tag/1.0.2)
+
 ## 2.0.0
 
 * Update to use [cgpBigWig-1.0.0](https://github.com/cancerit/cgpBigWig/releases/tag/1.0.0)
