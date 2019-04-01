@@ -53,7 +53,7 @@ This project is maintained using [HubFlow].
 ## LICENCE
 
 ```
-Copyright (c) 2016-2018 Genome Research Ltd.
+Copyright (c) 2016-2019 Genome Research Ltd.
 
 Author: Cancer, Ageing and Somatic Mutation <cgphelp@sanger.ac.uk>
 
