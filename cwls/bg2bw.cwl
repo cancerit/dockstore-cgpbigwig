@@ -26,7 +26,7 @@ baseCommand: bg2bw
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:2.0.1"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:2.1.0"
 
 inputs:
   input_path:
