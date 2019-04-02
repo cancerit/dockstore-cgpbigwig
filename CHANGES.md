@@ -1,5 +1,10 @@
 # CHANGES
 
+## 2.1.0
+
+* HTSLIB updated to 1.9
+* cgpBigWig updated to 1.0.3
+
 ## 2.0.1
 
 * Update to use [cgpBigWig-1.0.2](https://github.com/cancerit/cgpBigWig/releases/tag/1.0.2)

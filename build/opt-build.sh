@@ -8,9 +8,9 @@ fi
 
 set -u
 
-VER_HTSLIB="1.7"
+VER_HTSLIB="1.9"
 VER_LIBBW="0.4.2"
-VER_CGPBIGWIG="1.0.2"
+VER_CGPBIGWIG="1.0.3"
 
 if [ "$#" -lt "1" ] ; then
   echo "Please provide an installation path such as /opt/ICGC"
