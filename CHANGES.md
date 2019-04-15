@@ -1,5 +1,10 @@
 # CHANGES
 
+## 2.1.1
+
+* Update cgpBigWig to 1.0.4
+* Add update process
+
 ## 2.1.0
 
 * HTSLIB updated to 1.9
