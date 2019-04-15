@@ -36,7 +36,7 @@ FROM  ubuntu:16.04
 
 LABEL maintainer="drj@sanger.ac.uk"\
       uk.ac.sanger.cgp="Cancer, Ageing and Somatic Mutation, Wellcome Sanger Institute" \
-      version="2.1.0" \
+      version="2.1.1" \
       description="cgpBigWig for dockstore.org"
 
 ENV OPT /opt/wtsi-cgp
@@ -45,14 +45,18 @@ ENV LD_LIBRARY_PATH $OPT/lib
 ENV LC_ALL C
 
 RUN apt-get -yq update
-RUN apt-get install -yq --no-install-recommends\
-  apt-transport-https\
-  curl\
-  ca-certificates\
-  bzip2\
-  zlib1g\
-  liblzma5\
-  libncurses5
+RUN apt-get install -yq --no-install-recommends \
+apt-transport-https \
+curl \
+ca-certificates \
+bzip2 \
+zlib1g \
+liblzma5 \
+libncurses5 \
+unattended-upgrades && \
+unattended-upgrade -d -v && \
+apt-get remove -yq unattended-upgrades && \
+apt-get autoremove -yq
 
 RUN mkdir -p $OPT
 COPY --from=builder $OPT $OPT
