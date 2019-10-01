@@ -14,7 +14,7 @@ install:
 
 script:
  - docker images | grep -c dockstore-cgpbigwig
- - IMAGENAME=`docker images | grep cgpbigwig | tr -s ' ' | cut -d ' ' -f 3`
+ - IMAGENAME=`docker images | grep dockstore-cgpbigwig | tr -s ' ' | cut -d ' ' -f 3`
  - docker run -ti --rm $IMAGENAME bam2bedgraph --help
  - docker run -ti --rm $IMAGENAME bam2bw --help
  - docker run -ti --rm $IMAGENAME bam2bwbases --help

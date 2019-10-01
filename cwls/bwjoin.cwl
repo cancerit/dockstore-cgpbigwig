@@ -26,16 +26,16 @@ baseCommand: bwjoin
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:2.1.1"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:3.0.0"
 
 inputs:
   input_path:
     type: Directory
     inputBinding:
       prefix: --input-path
-      position: 1
+      position: 2
   output_path:
-    type: File
+    type: File?
     inputBinding:
       prefix: --outfile
   ignore_contigs:
@@ -46,10 +46,11 @@ inputs:
     type: File
     inputBinding:
       prefix: --fasta-index
+      position: 1
 
 outputs:
   output:
-    type: File?
+    type: stdout
 
 $namespaces:
     s: http://schema.org/
