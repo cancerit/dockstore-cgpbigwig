@@ -33,9 +33,9 @@ inputs:
     type: Directory
     inputBinding:
       prefix: --input-path
-      position: 1
+      position: 2
   output_path:
-    type: File
+    type: File?
     inputBinding:
       prefix: --outfile
   ignore_contigs:
@@ -46,10 +46,11 @@ inputs:
     type: File
     inputBinding:
       prefix: --fasta-index
+      position: 1
 
 outputs:
   output:
-    type: File?
+    type: stdout
 
 $namespaces:
     s: http://schema.org/

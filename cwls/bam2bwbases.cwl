@@ -28,17 +28,13 @@ baseCommand: bam2bwbases
 requirements:
   - class: DockerRequirement
     dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:2.1.1"
-
 inputs:
   input_path:
     type: File
     inputBinding:
       prefix: --input
       position: 1
-  output_path:
-    type: File
-    inputBinding:
-      prefix: --outfile
+    secondaryFiles: .bai
   filter:
     type: int?
     inputBinding:
@@ -59,10 +55,10 @@ inputs:
 
 
 outputs:
-output:
-  type: File
-  outputBinding:
-    glob: $("*."+inputs.output_path)
+  output:
+    type: stdout
+    
+stdout: bam2bwbases.out.bw
 
 $namespaces:
     s: http://schema.org/
