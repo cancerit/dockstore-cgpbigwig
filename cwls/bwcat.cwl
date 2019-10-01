@@ -22,7 +22,7 @@ doc: |
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:2.1.1"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:3.0.0"
 
 baseCommand: bwcat
 

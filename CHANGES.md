@@ -1,5 +1,9 @@
 # CHANGES
 
+## 3.0.0
+
+* Use the cpgbigwig container as a base for the image
+
 ## 2.1.1
 
 * Update cgpBigWig to 1.0.4
