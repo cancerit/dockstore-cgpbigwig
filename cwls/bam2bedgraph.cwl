@@ -59,7 +59,7 @@ $namespaces:
   s: http://schema.org/
 
 $schemas:
-  - http://schema.org/docs/schema_org_rdfa.html
+  - https://schema.org/version/latest/schema.rdf
 
 s:codeRepository: https://github.com/cancerit/dockstore-cgpbigwig
 s:license: https://spdx.org/licenses/GPL-3.0
