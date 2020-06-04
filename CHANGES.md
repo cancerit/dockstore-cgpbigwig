@@ -1,5 +1,9 @@
 # CHANGES
 
+## 3.0.1
+
+* updated CWL files metadata schema IRI
+
 ## 3.0.0
 
 * Use the cpgbigwig container as a base for the image
