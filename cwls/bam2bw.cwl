@@ -26,7 +26,7 @@ baseCommand: bam2bw
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:3.0.0"
+    dockerPull: "quay.io/wtsicgp/dockstore-cgpbigwig:3.0.1"
   - class: InlineJavascriptRequirement
 
 inputs:
@@ -72,7 +72,7 @@ outputs:
       glob: output.bam.bw
 
 $schemas:
-  - http://schema.org/docs/schema_org_rdfa.html
+  - https://schema.org/version/latest/schema.rdf
 
 $namespaces:
   s: http://schema.org/
