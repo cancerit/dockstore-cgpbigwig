@@ -1,5 +1,9 @@
 # CHANGES
 
+## 3.0.2 
+
+* All moved to core [cgpBigWig](https://github.com/cancerit/cgpBigWig/) project
+
 ## 3.0.1
 
 * updated CWL files metadata schema IRI
