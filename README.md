@@ -1,5 +1,9 @@
 # dockstore-cgpbigwig
 
+**`dockstore-cgpbigwig` Has been retired**.
+
+All components can now be found in the [cgpBigWig](https://github.com/cancerit/cgpBigWig)
+
 `dockstore-cgpbigwig` provides a suite of commandline tools written in C to manupulate [BigWig] files. These has been packaged specifically for use with the [Dockstore.org](https://dockstore.org/) framework.
 
 [![Gitter Badge][gitter_svg]][gitter_badge]
